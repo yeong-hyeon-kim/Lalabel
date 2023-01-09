@@ -60,6 +60,12 @@
       "color": "FBCA04",
       "description": "테스트",
       "hex": "#FBCA04"
+    },
+    {
+      "name": "🌙 Ticket:UPDATE",
+      "color": "E0EE",
+      "description": "업데이트",
+      "hex": "#E0EE"
     }
   ]
 ]
