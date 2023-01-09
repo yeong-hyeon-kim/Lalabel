@@ -62,10 +62,10 @@
       "hex": "#FBCA04"
     },
     {
-      "name": "🌙 Ticket:UPDATE",
-      "color": "E0EE",
-      "description": "업데이트",
-      "hex": "#E0EE"
+      "name": "🌙 Ticket:별고래",
+      "color": "00FFFF",
+      "description": "테스트",
+      "hex": "#00FFFF"
     }
   ]
 ]
