@@ -24,6 +24,7 @@ def PatchLabel():
     repository = GithubRepository(Token, RepositoryName)
     labels = repository.get_labels()
     for label in labels:
+        print(label)
         Labels.append({"name": label.name, "color": label.color,
                       "description": label.description, "hex": "#" + label.color})
     Repository.append(Labels)
@@ -57,8 +58,9 @@ def CreateLabel():
 
 # Github Action
 if __name__ == "__main__":
-    access_token = os.environ['TOKEN']
+    Token = os.environ['TOKEN']
+    RepositoryName  = os.environ['REPO']
 
 PatchLabel()
 DeleteDefaultLabel()
-# CreateLabel()
+CreateLabel()
