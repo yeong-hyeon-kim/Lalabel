@@ -7,8 +7,8 @@ import io
 sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding="utf-8")
 sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding="utf-8")
 
-Token = ""
-RepositoryName = ""
+# Token = ""
+# RepositoryName = ""
 
 # def RepositoryInfo():
 #     LocalStorage = []
@@ -40,6 +40,7 @@ def PatchLabel():
        LocalName = LocalStorage[0]["Repository"]
        LocalLabelCount = length_hint(LocalStorage[1])
        
+       global RepositoryName
        RepositoryName = LocalName
        LabelCount = LocalLabelCount
     ##########################################################
