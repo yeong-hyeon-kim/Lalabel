@@ -31,3 +31,6 @@ jobs:
     - name: Run Scrip
       run: |
          python script.py
+      env:
+       TOKEN: ${{ secrets.TOKEN }}
+       REPO: ${{ secrets.REPO }}
