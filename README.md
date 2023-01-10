@@ -1,4 +1,4 @@
-# 📕 라라벨(Lalabel)
+# 📕 Lalabel
 
 - `Github` `Lable` 템플릿을 작성합니다.
 
@@ -12,6 +12,7 @@
 2. 레포지토리`(Repository)` 포크(Fork)
 3. 레포지토리`(Repository)` `Actions secrets` 설정
     - `TOKEN` : `Personal access tokens`
+    - `REPO`  : `Repository` - 라벨 가져올 레포지토리 이름
 4. 라벨`(Label)` [템플릿(Template)](./labels.json) 수정
 
     ```javascript
