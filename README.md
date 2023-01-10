@@ -8,9 +8,28 @@
 
 ## 💡 사용 예제(Usage Example)
 
-코드와 설명을 통해 사용 방법을 자세히 설명합니다.
+1. `Personal access tokens` 발급
+2. 레포지토리`(Repository)` 포크(Fork)
+3. 레포지토리`(Repository)` `Actions secrets` 설정
+    - `TOKEN` : `Personal access tokens`
+4. 라벨`(Label)` [템플릿(Template)](./labels.json) 수정
 
-- 사용 방법
+    ```javascript
+    [
+        { "Repository": "레포지토리 이름" },
+        [
+            {
+            "name": "이름",
+            "color": "색상",
+            "description": "설명",
+            "hex": ""
+            }
+        ]
+    ]
+    ```
+
+5. 브런치`(Branch)` 생성 후 `Full Request` 요청
+6. 대상 레포지토리`(Repository)` 라벨 확인
 
 ## 💻 개발 환경(Develop Environment)
 
