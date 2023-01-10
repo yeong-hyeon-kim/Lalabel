@@ -1,5 +1,5 @@
 ﻿[
-  { "Repository": "Lalabel" },
+  { "Repository": "Frameword" },
   [
     {
       "name": "✔ Status:Done",
@@ -60,12 +60,6 @@
       "color": "FBCA04",
       "description": "테스트",
       "hex": "#FBCA04"
-    },
-    {
-      "name": "🌙 Ticket:별고래",
-      "color": "00FFFF",
-      "description": "테스트",
-      "hex": "#00FFFF"
     }
   ]
 ]
