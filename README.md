@@ -9,8 +9,8 @@
 ## 💡 사용 예제(Usage Example)
 
 1. `Personal access tokens` 발급 합니다.
-2. 레포지토리`(Repository)` 포크(Fork)합니다.
-3. 레포지토리`(Repository)` `Actions secrets` 설정
+2. 레포지토리`(Repository)` 포크`(Fork)`합니다.
+3. 레포지토리`(Repository)` `Actions secrets` 설정합니다.
     - `TOKEN` : `Personal access tokens`
     - `REPO`  : `Repository` - 라벨 가져올 레포지토리 이름
 4. 라벨`(Label)` [템플릿(Template)](./labels.json) 수정합니다.
@@ -30,7 +30,7 @@
     ```
 
 5. 브런치`(Branch)` 생성 후 `Full Request` 요청합니다.
-6. `Github Action` 완료 후 대상 레포지토리`(Repository)` 라벨 확인합니다.
+6. `Github Action` 완료 후 대상 레포지토리`(Repository)` 라벨을 확인합니다.
 
 ## 💻 개발 환경(Develop Environment)
 
@@ -67,4 +67,4 @@ pip install -r requirements.txt
 
 ## 📖 비고(Remark)
 
-- 비고를 작성합니다.
+### ⚠️ 대상 레포지토리에 생성된 라벨은 제거되고 [템플릿(Template)](./labels.json) 내용으로 생성됩니다
