@@ -1,6 +1,6 @@
 # 📕 Lalabel
 
-- `Github` `Lable` 템플릿을 작성합니다.
+- `Github Issue Lable` 템플릿을 작성하고 다른 레포지토리에 복사합니다.
 
 ## 🏷️ 기능(Function)
 
@@ -8,12 +8,12 @@
 
 ## 💡 사용 예제(Usage Example)
 
-1. `Personal access tokens` 발급
-2. 레포지토리`(Repository)` 포크(Fork)
+1. `Personal access tokens` 발급 합니다.
+2. 레포지토리`(Repository)` 포크(Fork)합니다.
 3. 레포지토리`(Repository)` `Actions secrets` 설정
     - `TOKEN` : `Personal access tokens`
     - `REPO`  : `Repository` - 라벨 가져올 레포지토리 이름
-4. 라벨`(Label)` [템플릿(Template)](./labels.json) 수정
+4. 라벨`(Label)` [템플릿(Template)](./labels.json) 수정합니다.
 
     ```javascript
     [
@@ -29,8 +29,8 @@
     ]
     ```
 
-5. 브런치`(Branch)` 생성 후 `Full Request` 요청
-6. 대상 레포지토리`(Repository)` 라벨 확인
+5. 브런치`(Branch)` 생성 후 `Full Request` 요청합니다.
+6. `Github Action` 완료 후 대상 레포지토리`(Repository)` 라벨 확인합니다.
 
 ## 💻 개발 환경(Develop Environment)
 
