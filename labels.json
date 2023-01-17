@@ -16,7 +16,7 @@
     {
       "name": "⏳ Status:Wait",
       "color": "009966",
-      "description": "배포 관련",
+      "description": "대기",
       "hex": "#009966"
     },
     {
