@@ -1,5 +1,5 @@
 ﻿[
-  { "Repository": "Table-Highlight" },
+  { "Repository": "Lalabel" },
   [
     {
       "name": "✔ Status:Done",
@@ -8,7 +8,7 @@
       "hex": "#0E8A16"
     },
     {
-      "name": "❗ Ticket:Bug",
+      "name": "❗Ticket:Bug",
       "color": "B60205",
       "description": "버그",
       "hex": "#B60205"
@@ -48,6 +48,12 @@
       "color": "0052CC",
       "description": "요청사항",
       "hex": "#0052CC"
+    },
+    {
+      "name": "🧼 Ticket:Refactor",
+      "color": "8A2BE2",
+      "description": "코드정리",
+      "hex": "#8A2BE2"
     },
     {
       "name": "🛠 Status:In Progress",
