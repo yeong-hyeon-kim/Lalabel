@@ -34,12 +34,12 @@ def PatchLabel():
         LocalStorage = json.load(file)
 
     if len(LocalStorage) != 0:
-       LocalName = LocalStorage[0]["Repository"]
-       LocalLabelCount = length_hint(LocalStorage[1])
+        LocalName = LocalStorage[0]["Repository"]
+        LocalLabelCount = length_hint(LocalStorage[1])
 
-       global RepositoryName
-       RepositoryName = LocalName
-       LabelCount = LocalLabelCount
+        global RepositoryName
+        RepositoryName = LocalName
+        LabelCount = LocalLabelCount
     ##########################################################
 
     if LabelCount == 0:
@@ -59,7 +59,7 @@ def PatchLabel():
 
             with open('labels.json', 'w', encoding='UTF-8-sig') as f:
                 f.write(json.dumps(Repository, ensure_ascii=False))
-                
+
         print("Fetch Labels!")
 # 레포지토리 레이블 제거
 
