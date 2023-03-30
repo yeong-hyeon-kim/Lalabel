@@ -23,7 +23,7 @@
             "name": "이름",
             "color": "색상",
             "description": "설명",
-            "hex": ""
+            "hex": "색상코드"
             }
         ]
     ]
