@@ -10,6 +10,8 @@ sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding="utf-8")
 # Token = ""
 # RepositoryName = ""
 
+global RepositoryName
+
 # 레포지토리 정보 가져오기
 
 
@@ -24,32 +26,31 @@ def GithubRepository():
 # 레포지토리 레이블 가져오기
 
 
-def PatchLabel():
+def FetchLabel():
     # 내부 정보 확인
-    ##########################################################
     LocalStorage = []
     LabelCount = 0
 
+    # 저장된 라벨 읽기
     with open('labels.json', 'r', encoding='UTF-8-sig') as file:
         LocalStorage = json.load(file)
 
     if len(LocalStorage) != 0:
-        LocalName = LocalStorage[0]["Repository"]
-        LocalLabelCount = length_hint(LocalStorage[1])
-
-        global RepositoryName
-        RepositoryName = LocalName
-        LabelCount = LocalLabelCount
-    ##########################################################
+        # 라벨 갯수
+        LabelCount = length_hint(LocalStorage[1])
+        # 레포지토리 이름
+        RepositoryName = LocalStorage[0]["Repository"]
 
     if LabelCount == 0:
         # 레이블 객체
         Labels = []
         Repository = [{"Repository": RepositoryName}]
 
+        # 레포지토리 객체
         repository = GithubRepository()
         labels = repository.get_labels()
 
+        # 라벨 파일에 추가
         if labels.totalCount != 0:
             for label in labels:
                 print(label)
@@ -61,11 +62,14 @@ def PatchLabel():
                 f.write(json.dumps(Repository, ensure_ascii=False))
 
         print("Fetch Labels!")
+
 # 레포지토리 레이블 제거
 
 
 def DeleteDefaultLabel():
+    # 레포지토리 객체
     repository = GithubRepository()
+    # 레포지토리 라벨 객체
     labels = repository.get_labels()
 
     if labels.totalCount != 0:
@@ -76,7 +80,7 @@ def DeleteDefaultLabel():
         print("Remove Labels!")
 
 
-# 레포지토리 레이블 생성
+# 레포지토리 레이블 등록
 def CreateLabel():
     Labels = []
     repository = GithubRepository()
@@ -92,13 +96,13 @@ def CreateLabel():
     print("Created Labels!")
 
 
-# Github Action
+# 깃허브 액션(Github Action)
 if __name__ == "__main__":
     Token = os.environ['TOKEN']
     RepositoryName = os.environ['REPO']
 
 # 대상 레포지토리 라벨 가져오기
-PatchLabel()
+FetchLabel()
 # 대상 레포지토리 라벨 지우기
 DeleteDefaultLabel()
 # 사용자 지정 라벨 템플릿 등록
